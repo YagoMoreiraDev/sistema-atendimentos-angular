@@ -1,0 +1,7 @@
+.button-menu-item {
+    position: relative;
+
+    &:active {
+        bottom: -2px;
+    }
+}
