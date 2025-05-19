@@ -1,0 +1,456 @@
+<form class="max-w-7xl mx-auto px-4 py-6 space-y-8">
+    <h2 class="text-2xl font-semibold text-gray-800">Cadastro de Acolhimento</h2>
+
+    <!-- Data / Protocolo / Prontuário -->
+    <div class="grid md:grid-cols-3 gap-6">
+        <div class="relative z-0 w-full group">
+            <input type="date" name="data" id="data" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="data"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Data</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+            <input type="number" name="protocolo" id="protocolo" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="protocolo"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Protocolo</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+            <input type="number" name="prontuario" id="prontuario" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="prontuario"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Prontuário</label>
+        </div>
+    </div>
+
+    <!-- Modalidade de Atendimento -->
+    <div>
+        <p class="text-gray-700 font-medium mb-2">Modalidade de Atendimento</p>
+        <div class="flex gap-6">
+            <label class="inline-flex items-center">
+                <input type="radio" name="modalidade" value="presencial" class="text-blue-600" />
+                <span class="ml-2 text-sm text-gray-700">Presencial</span>
+            </label>
+            <label class="inline-flex items-center">
+                <input type="radio" name="modalidade" value="virtual" class="text-blue-600" />
+                <span class="ml-2 text-sm text-gray-700">Virtual</span>
+            </label>
+        </div>
+    </div>
+
+    <!-- Dados Pessoais -->
+    <h3 class="text-lg font-semibold text-gray-800 mt-8 mb-4">Dados Pessoais</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+        <div class="relative z-0 w-full group">
+            <input type="text" name="nome" id="nome" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="nome"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Nome completo</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+            <input type="text" name="apelido" id="apelido" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="apelido"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Nome social / Apelido</label>
+        </div>
+    </div>
+
+    <!-- Contato e nacionalidade -->
+    <div class="grid md:grid-cols-3 gap-6 mt-6">
+        <div class="relative z-0 w-full group">
+            <input type="tel" name="telefone" id="telefone" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="telefone"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Telefone</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+            <input type="text" name="nacionalidade" id="nacionalidade" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="nacionalidade"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Nacionalidade</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+            <input type="text" name="naturalidade" id="naturalidade" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="naturalidade"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Naturalidade</label>
+        </div>
+    </div>
+
+    <!-- Filiação -->
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <div class="relative z-0 w-full group">
+            <input type="text" name="nomeMae" id="nomeMae" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="nomeMae"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Nome da mãe</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+            <input type="text" name="nomePai" id="nomePai" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="nomePai"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Nome do pai</label>
+        </div>
+    </div>
+
+    <!-- Endereço -->
+    <div class="grid md:grid-cols-2 gap-6 mt-6">
+        <div class="relative z-0 w-full group">
+            <input type="text" name="endereco" id="endereco" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="endereco"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Endereço</label>
+        </div>
+
+        <div class="relative z-0 w-full group">
+            <input type="text" name="bairro" id="bairro" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="bairro"
+                class="absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Bairro</label>
+        </div>
+    </div>
+
+    <!-- Número / CEP / Cidade / Estado -->
+    <div class="grid md:grid-cols-4 gap-6 mt-6">
+        <div class="relative z-0 w-full group">
+            <input type="text" name="numero" id="numero" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="numero"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Número</label>
+        </div>
+        <div class="relative z-0 w-full group">
+            <input type="text" name="cep" id="cep" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="cep"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                CEP</label>
+        </div>
+        <div class="relative z-0 w-full group">
+            <input type="text" name="cidade" id="cidade" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="cidade"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Cidade</label>
+        </div>
+        <div class="relative z-0 w-full group">
+            <input type="text" name="estado" id="estado" required placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="estado"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Estado</label>
+        </div>
+    </div>
+
+    <!-- Identidade racial, orientação sexual, identidade de gênero, estado civil -->
+    <div class="grid md:grid-cols-4 gap-6 mt-10">
+        <!-- Identidade racial -->
+        <div>
+            <label for="identidadeRacial" class="block mb-2 text-sm font-medium text-gray-700">
+                Identidade racial ou étnica
+            </label>
+            <select name="identidadeRacial" id="identidadeRacial" required
+                class="w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600">
+                <option value="" disabled selected>Selecione</option>
+                <option value="branca">Branca</option>
+                <option value="preta">Preta</option>
+                <option value="parda">Parda</option>
+                <option value="amarela">Amarela</option>
+                <option value="indigena">Indígena</option>
+                <option value="nao_soube_informar">Não soube informar</option>
+                <option value="prefere_nao_responder">Prefere não responder</option>
+            </select>
+        </div>
+
+        <!-- Orientação sexual -->
+        <div>
+            <label for="orientacaoSexual" class="block mb-2 text-sm font-medium text-gray-700">
+                Orientação sexual
+            </label>
+            <select name="orientacaoSexual" id="orientacaoSexual" required
+                class="w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600">
+                <option value="" disabled selected>Selecione</option>
+                <option value="cisgenero">Cisgênero</option>
+                <option value="transgenero">Transgênero</option>
+                <option value="nao_binario">Não-binário</option>
+                <option value="genero_fluido">Gênero fluido</option>
+                <option value="agenero">Agênero</option>
+                <option value="bigenero">Bigênero</option>
+                <option value="genero_neutro">Gênero neutro</option>
+                <option value="demigenero">Demigênero</option>
+                <option value="nao_soube_informar">Não soube informar</option>
+                <option value="prefere_nao_responder">Prefere não responder</option>
+            </select>
+        </div>
+
+        <!-- Identidade de gênero -->
+        <div>
+            <label for="identidadeGenero" class="block mb-2 text-sm font-medium text-gray-700">
+                Identidade de gênero
+            </label>
+            <select name="identidadeGenero" id="identidadeGenero" required
+                class="w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600">
+                <option value="" disabled selected>Selecione</option>
+                <option value="heterossexual">Heterossexual</option>
+                <option value="homossexual">Homossexual</option>
+                <option value="bissexual">Bissexual</option>
+                <option value="pansexual">Pansexual</option>
+                <option value="assexual">Assexual</option>
+                <option value="demissexual">Demissexual</option>
+                <option value="queer">Queer</option>
+                <option value="nao_soube_informar">Não soube informar</option>
+                <option value="prefere_nao_responder">Prefere não responder</option>
+            </select>
+        </div>
+
+        <!-- Estado civil -->
+        <div>
+            <label for="estadoCivil" class="block mb-2 text-sm font-medium text-gray-700">
+                Estado civil
+            </label>
+            <select name="estadoCivil" id="estadoCivil" required
+                class="w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600">
+                <option value="" disabled selected>Selecione</option>
+                <option value="solteiro">Solteiro(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="uniao-estavel">União Estável</option>
+                <option value="viuvo">Viúvo(a)</option>
+                <option value="separado">Separado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Religião e Deficiência -->
+    <div class="grid md:grid-cols-2 gap-6 mt-10">
+        <!-- Religião -->
+        <div>
+            <label for="religiao" class="block mb-2 text-sm font-medium text-gray-700">Religião</label>
+            <select name="religiao" id="religiao" required
+                class="w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600"
+                x-model="religiaoSelecionada">
+                <option value="" disabled selected>Selecione</option>
+                <option value="catolica">Católica</option>
+                <option value="evangelica">Evangélica</option>
+                <option value="espirita">Espirita</option>
+                <option value="muçulmana">Muçulmana</option>
+                <option value="matrizes">Matrizes africanas</option>
+                <option value="agnostico">Agnóstico</option>
+                <option value="ateu">Ateu</option>
+                <option value="outra">Outra</option>
+            </select>
+
+            <!-- Campo condicional: Qual religião? -->
+            <div x-show="religiaoSelecionada === 'matrizes' || religiaoSelecionada === 'outra'" class="mt-4">
+                <label for="religiaoDetalhe" class="block mb-2 text-sm font-medium text-gray-700">Qual religião?</label>
+                <input type="text" name="religiaoDetalhe" id="religiaoDetalhe" placeholder="Descreva..."
+                    class="block w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600" />
+            </div>
+        </div>
+
+        <!-- Deficiência -->
+        <div>
+            <label for="deficiencia" class="block mb-2 text-sm font-medium text-gray-700">Possui algum tipo de
+                deficiência?</label>
+            <select name="deficiencia" id="deficiencia" required
+                class="w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600"
+                x-model="deficienciaSelecionada">
+                <option value="" disabled selected>Selecione</option>
+                <option value="nenhuma">Não</option>
+                <option value="sim">Sim</option>
+                <option value="ignorado">Ignorado</option>
+                <option value="fisica">Física</option>
+                <option value="visual">Visual</option>
+                <option value="auditiva">Auditiva</option>
+                <option value="multipla">Múltipla</option>
+                <option value="outras">Outras</option>
+            </select>
+
+            <!-- Campo condicional: Descreva a deficiência -->
+            <div x-show="deficienciaSelecionada === 'multipla' || deficienciaSelecionada === 'outras'" class="mt-4">
+                <label for="deficienciaDetalhe" class="block mb-2 text-sm font-medium text-gray-700">Descreva a
+                    deficiência</label>
+                <input type="text" name="deficienciaDetalhe" id="deficienciaDetalhe" placeholder="Ex: física + auditiva"
+                    class="block w-full border-b-2 border-gray-300 text-sm text-gray-900 bg-transparent py-2.5 px-0 focus:outline-none focus:border-blue-600" />
+            </div>
+        </div>
+    </div>
+
+    <!-- Situação Socioeconômica -->
+    <h3 class="text-lg font-semibold text-gray-800 mt-10 mb-4">Situação Socioeconômica</h3>
+    <div class="grid md:grid-cols-2 gap-6">
+
+        <!-- Escolaridade -->
+        <div class="relative z-0 w-full group">
+            <select name="escolaridade" id="escolaridade" required
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0">
+                <option value="" disabled selected hidden></option>
+                <option value="fund_incompleto">Ensino fundamental incompleto</option>
+                <option value="fund_completo">Ensino fundamental completo</option>
+                <option value="alfabetizado">Alfabetizado</option>
+                <option value="nao_alfabetizado">Não-Alfabetizado</option>
+                <option value="medio_incompleto">Ensino médio incompleto</option>
+                <option value="medio_completo">Ensino médio completo</option>
+                <option value="curso_tecnico">Curso técnico</option>
+                <option value="sup_incompleto">Superior incompleto</option>
+                <option value="sup_completo">Superior completo</option>
+                <option value="pos">Pós-graduação</option>
+            </select>
+            <label for="escolaridade"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Grau de Escolaridade</label>
+        </div>
+
+        <!-- Profissão -->
+        <div class="relative z-0 w-full group">
+            <input type="text" name="profissao" id="profissao" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="profissao"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Profissão</label>
+        </div>
+
+        <!-- Ocupação atual -->
+        <div class="relative z-0 w-full group">
+            <input type="text" name="ocupacaoAtual" id="ocupacaoAtual" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="ocupacaoAtual"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Ocupação atual</label>
+        </div>
+
+        <!-- Faixa de Renda -->
+        <div class="relative z-0 w-full group">
+            <select name="renda" id="renda" required
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0">
+                <option value="" disabled selected hidden></option>
+                <option value="ate_meio_salario">Até meio salário-mínimo</option>
+                <option value="meio_a_um_salario">Entre meio e um salário-mínimo</option>
+                <option value="entre_1_2">Entre 1 e 2 salários mínimos</option>
+                <option value="entre_2_3">Entre 2 e 3 salários mínimos</option>
+                <option value="entre_3_4">Entre 3 e 4 salários mínimos</option>
+                <option value="mais_5">Mais de 5 salários</option>
+                <option value="sem_renda">Sem renda</option>
+            </select>
+            <label for="renda"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Faixa de Renda</label>
+        </div>
+
+        <!-- Bolsa Família -->
+        <div class="relative z-0 w-full group">
+            <input type="number" name="bolsaFamilia" id="bolsaFamilia" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="bolsaFamilia"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Bolsa Família (R$)</label>
+        </div>
+
+        <!-- Aposentadoria -->
+        <div class="relative z-0 w-full group">
+            <input type="number" name="aposentadoria" id="aposentadoria" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="aposentadoria"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Aposentadoria (R$)</label>
+        </div>
+
+        <!-- Pensão - Tipo -->
+        <div class="relative z-0 w-full group">
+            <input type="text" name="pensaoTipo" id="pensaoTipo" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="pensaoTipo"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Pensão - Tipo</label>
+        </div>
+
+        <!-- Pensão - Valor -->
+        <div class="relative z-0 w-full group">
+            <input type="number" name="pensaoValor" id="pensaoValor" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="pensaoValor"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Pensão - R$</label>
+        </div>
+
+        <!-- BPC -->
+        <div class="relative z-0 w-full group">
+            <select name="bpc" id="bpc"
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0">
+                <option value="" disabled selected hidden></option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select>
+            <label for="bpc"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Recebe BPC?</label>
+        </div>
+
+        <!-- Outros benefícios -->
+        <div class="relative z-0 w-full group">
+            <input type="text" name="beneficiosOutros" id="beneficiosOutros" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="beneficiosOutros"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Outros Benefícios</label>
+        </div>
+
+        <!-- Moradia -->
+        <div class="relative z-0 w-full group">
+            <select name="moradia" id="moradia"
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0"
+                x-model="moradia">
+                <option value="" disabled selected hidden></option>
+                <option value="propria">Própria</option>
+                <option value="alugada">Alugada</option>
+                <option value="ocupacao">Ocupação</option>
+                <option value="outra">Outra</option>
+            </select>
+            <label for="moradia"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Condições de moradia</label>
+        </div>
+
+        <!-- Moradia outra -->
+        <div x-show="moradia === 'outra'" class="relative z-0 w-full group">
+            <input type="text" name="moradiaOutra" id="moradiaOutra" placeholder=" "
+                class="peer block w-full appearance-none border-0 border-b-2 border-gray-300 bg-transparent py-2.5 px-0 text-sm text-gray-900 focus:border-blue-600 focus:outline-none focus:ring-0" />
+            <label for="moradiaOutra"
+                class="absolute text-sm text-gray-500 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:scale-75 peer-focus:-translate-y-6">
+                Descreva</label>
+        </div>
+
+    </div>
+
+
+
+    <!-- Botões -->
+    <div class="flex justify-end gap-4 mt-10">
+        <button type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-6 py-2.5 transition duration-150">
+            Salvar
+        </button>
+        <button type="reset"
+            class="text-gray-700 border border-gray-300 hover:bg-gray-100 font-medium rounded-lg text-sm px-6 py-2.5 transition duration-150">
+            Cancelar
+        </button>
+    </div>
+
+
+
+</form>

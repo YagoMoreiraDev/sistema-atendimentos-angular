@@ -7,6 +7,7 @@ import { MenuItemComponent } from './components/menu-item/menu-item.component';
 import { LayoutMainComponent } from './components/layout-main/layout-main.component';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { CardInfoComponent } from './components/card-info/card-info.component';
+import { FormCadastroComponent } from './pages/form-cadastro/form-cadastro.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CardInfoComponent } from './components/card-info/card-info.component';
     MenuItemComponent,
     LayoutMainComponent,
     InicioComponent,
-    CardInfoComponent
+    CardInfoComponent,
+    FormCadastroComponent
   ],
   imports: [
     BrowserModule
