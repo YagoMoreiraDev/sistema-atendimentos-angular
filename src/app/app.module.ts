@@ -9,6 +9,7 @@ import { InicioComponent } from './pages/inicio/inicio.component';
 import { CardInfoComponent } from './components/card-info/card-info.component';
 import { FormCadastroComponent } from './pages/form-cadastro/form-cadastro.component';
 import { AppRoutingModule } from './app-routing.module';
+import { RelatorioComponent } from './pages/relatorio/relatorio.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     LayoutMainComponent,
     InicioComponent,
     CardInfoComponent,
-    FormCadastroComponent
+    FormCadastroComponent,
+    RelatorioComponent
   ],
   imports: [
     BrowserModule,
