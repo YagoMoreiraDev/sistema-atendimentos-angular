@@ -1,25 +1,30 @@
-<div class="flex items-center justify-center h-48 mb-4 rounded-sm bg-gray-50 dark:bg-gray-800">
-    <p class="text-2xl text-gray-400 dark:text-gray-500">
-        <svg class="w-3.5 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M9 1v16M1 9h16" />
-        </svg>
-    </p>
+<div class="flex items-center justify-center h-48 mb-4 rounded-xl bg-green-700 dark:bg-gray-800">
+    <div class="text-2xl text-gray-400 dark:text-gray-500">
+
+    </div>
 </div>
-<div class="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
-    <div class="grid grid-cols-3 gap-4">
-        <div class="flex items-center justify-center">
-            <app-card-info [tituloCard]="'Em Aberto'" [descCard]="'Total de atendimento em aberto'"></app-card-info>
+
+<div class="p-4">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4 justify-items-center">
+        <div class="flex items-stretch">
+            <app-card-info class="h-full" [imagemPath]="'/assets/expirado.png'" [imagemAlt]="'Imagem de pendente'"
+                [tituloCard]="'Em Aberto'" [descCard]="'Total de atendimento em aberto'">
+            </app-card-info>
         </div>
-        <div class="flex items-center justify-center">
-            <app-card-info [tituloCard]="'Concluídos'" [descCard]="'Total de atendimento em aberto'"></app-card-info>
+        <div class="flex items-stretch">
+            <app-card-info class="h-full" [imagemPath]="'/assets/concluido.png'" [imagemAlt]="'Imagem de concluído'"
+                [tituloCard]="'Concluídos'" [descCard]="'Total de atendimento em aberto'">
+            </app-card-info>
         </div>
-        <div class="flex items-center justify-center">
-            <app-card-info [tituloCard]="'Todos os atendimentos'" [descCard]="'Total de atendimento em aberto'"></app-card-info>
+        <div class="flex items-stretch">
+            <app-card-info class="h-full" [imagemPath]="'/assets/agente-de-atendimento-ao-cliente.png'"
+                [imagemAlt]="'Imagem de atendente'" [tituloCard]="'Todos os atendimentos'"
+                [descCard]="'Total de atendimento em aberto'">
+            </app-card-info>
         </div>
     </div>
-
 </div>
+
 <div class="grid grid-cols-2 gap-4 mt-4 mb-4">
     <div class="flex items-center justify-center rounded-sm bg-gray-50 h-28 dark:bg-gray-800">
         <p class="text-2xl text-gray-400 dark:text-gray-500">

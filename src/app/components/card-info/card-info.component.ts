@@ -8,4 +8,6 @@ import { Component, Input } from '@angular/core';
 export class CardInfoComponent {
   @Input() tituloCard: string = '';
   @Input() descCard: string = '';
+  @Input() imagemPath: string = '';
+  @Input() imagemAlt: string = '';
 }
